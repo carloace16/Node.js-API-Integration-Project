@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Cat API Search</title>
+    <style>
+        body, form{
+            margin:20px auto;
+            max-width:800px;
+            overflow-x:hidden;
+        }
+        fieldset{
+            display: flex;
+        }
+        input[type="number"]{
+            flex-grow:50;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="search" method="get">
+        <fieldset>
+            <legend>Get Cat Image and Upload</legend>
+            <label for="status">HTTP Cat Status Code number:</label>
+            <input id="status" name="status" type="number" min="100" max="599" />
+            <input type="submit" value="Get Cat" />
+        </fieldset>
+    </form>
+</body>
+</html>
